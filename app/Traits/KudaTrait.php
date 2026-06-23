@@ -25,11 +25,11 @@ trait KudaTrait {
     //password = {clientKey}-{randomString};
     public function getkey()
     {
-        $seckey= 'FLWSECK-98f875eec99672e93f36b1969f90d67b-X';
-        $this->publickey = 'FLWPUBK-5d7f376ed3e45496311ec858c294cade-X';
+        $seckey = config('flutterwave.secret_key');
+        $this->publickey = config('flutterwave.public_key');
             $hashedkey = md5($seckey);
             $hashedkeylast12 = substr($hashedkey, -12);
-            $seckeyadjusted = str_replace("FLWSECK-", "", $seckey);
+            $seckeyadjusted = preg_replace('/^[^-]+-/', '', $seckey);
             $seckeyadjustedfirst12 = substr($seckeyadjusted, 0, 12);
             $encryptionkey = $seckeyadjustedfirst12.$hashedkeylast12;
             return $encryptionkey;

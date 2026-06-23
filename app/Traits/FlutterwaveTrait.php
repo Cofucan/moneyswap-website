@@ -105,7 +105,6 @@ trait FlutterwaveTrait {
 
     public function verifyPayment($transactionId)
     {
-        //$fluttersecret ='FLWSECK_TEST-5a5da51d99685bc99523a1dcb42d098a-X';
         //$fluttersecret = \Config::get('flutterwave.fluttersecret');
         //$fluttersecret = Config('flutterwave.fluttersecret');
         $response = Http::withHeaders([

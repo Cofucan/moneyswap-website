@@ -58,7 +58,7 @@
   @endsection
   @push('scripts')
   <script>
-    const API_publicKey = "FLWPUBK-af07cfe2e237249eac992cf4d1150338-X";
+    const API_publicKey = @json(config('flutterwave.public_key'));
 
     function payWithRave() {
         var x = getpaidSetup({
@@ -99,4 +99,3 @@
 </script>
 
  @endpush
-
