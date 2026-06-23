@@ -1,0 +1,89 @@
+.project-tab {
+    padding: 5%;
+    /* margin-top: -8%; */
+    background: #fff;;
+
+}
+/* .project-tab #tabs{
+    background: #007b5e;
+    color: #eee;
+} */
+ #tabs h6.section-title{
+    color: #eee;
+}
+ #tabs .nav-tabs .nav-item.show .nav-link, .nav-tabs .nav-link.active {
+    color: #0062cc;
+    background-color: transparent;
+    /* border-color: transparent transparent #f3f3f3; */
+    border-bottom: 3px solid !important;
+    font-size: 16px;
+    font-weight: bold;
+}
+#tab .nav-link {
+    border: 1px solid transparent;
+    border-top-left-radius: .25rem;
+    border-top-right-radius: .25rem;
+    color: #0062cc;
+    font-size: 16px;
+    font-weight: 600;
+}
+#tab .nav-link:hover {
+    border: none;
+}
+
+/* .project-tab a{
+    text-decoration: none;
+    color: #333;
+    font-weight: 600;
+} */
+
+
+.owl-1 .owl-nav {
+    width: 100%;
+    position: absolute;
+    top: 30%;
+  }
+    .owl-1 .owl-nav .owl-next,
+    .owl-1 .owl-nav .owl-prev {
+      border: 1px solid red;
+      z-index: 92;
+      position: absolute;
+      top: 50%; }
+      .owl-1 .owl-nav .owl-next:active, .owl-1 .owl-nav .owl-next:focus,
+      .owl-1 .owl-nav .owl-prev:active,
+      .owl-1 .owl-nav .owl-prev:focus {
+        outline: none; }
+      .owl-1 .owl-nav .owl-next i,
+      .owl-1 .owl-nav .owl-prev i {
+        color: #003399; }
+        .owl-1 .owl-nav .owl-next i:before,
+        .owl-1 .owl-nav .owl-prev i:before {
+          font-size: 20px !important; }
+    .owl-1 .owl-nav .owl-next {
+      border: 4px solid blue;
+      right: -10%;
+    }
+    .owl-1 .owl-nav .owl-prev {
+      left: -10%; }
+
+  .owl-1 .owl-dots {
+    position: absolute;
+    bottom: -15%;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    transform: translateX(-50%); }
+    .owl-1 .owl-dots .owl-dot {
+      background: none;
+      display: inline-block; }
+      .owl-1 .owl-dots .owl-dot > span {
+        display: inline-block;
+        width: 10px;
+        height: 10px;
+        border-radius: 50%;
+        background: rgba(13, 2, 53, 0.726);
+        margin: 4px; }
+      .owl-1 .owl-dots .owl-dot.active > span {
+        background: #003399; }
+      .owl-1 .owl-dots .owl-dot:active, .owl-1 .owl-dots .owl-dot:focus {
+        outline: none; }

@@ -1,0 +1,80 @@
+<?php
+
+namespace Modules\CatalogManagement\Entities;
+use Illuminate\Support\Str;
+use Illuminate\Support\Facades\Auth;
+use Illuminate\Database\Eloquent\Model;
+
+class Feature extends Model
+{
+    //
+    protected $fillable = [
+        'label',
+        'overview',
+        'icon',
+        'display_image',
+        'slug',
+        'display_order',
+        'enabled',
+        'featured',
+    ];
+
+    public function getRouteKeyName()
+    {
+        return 'slug';
+    }
+
+    protected $attributes =
+    [
+        'enabled' => true
+    ];
+
+    public static function boot()
+    {
+        parent::boot();
+        static::creating(function ($model) {
+            $model->slug = Str::slug($model->label);
+        });
+        static::updating(function ($model) {
+            $model->slug = Str::slug($model->label);
+        });
+    }
+
+    public function getSummaryAttribute()
+    {
+        return Str::limit($this->overview, $limit = 120, $end = '...');
+    }
+
+
+    public function getBriefAttribute()
+    {
+        return Str::limit($this->overview, $limit = 300, $end = '...');
+    }
+
+
+    public function getStatusAttribute()
+    {
+        if($this->enabled == true)
+        {
+            return 'Enabled';
+        }
+        return 'Disabled';
+    }
+
+
+    public function scopeActive($query)
+    {
+        return $query->whereEnabled(true);
+    }
+
+    public function ScopeFeatured($query)
+    {
+        return $query->where('featured', true)->whereEnabled(true);
+    }
+
+    public function Prices()
+    {
+        return $this->hasMany(Price::class, 'feature_id');
+    }
+   
+}

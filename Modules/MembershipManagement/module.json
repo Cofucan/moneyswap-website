@@ -1,0 +1,13 @@
+{
+    "name": "MembershipManagement",
+    "alias": "membershipmanagement",
+    "description": "",
+    "keywords": [],
+    "priority": 0,
+    "providers": [
+        "Modules\\MembershipManagement\\Providers\\MembershipManagementServiceProvider"
+    ],
+    "aliases": {},
+    "files": [],
+    "requires": []
+}

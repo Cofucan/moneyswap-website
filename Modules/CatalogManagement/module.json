@@ -1,0 +1,13 @@
+{
+    "name": "CatalogManagement",
+    "alias": "catalogmanagement",
+    "description": "",
+    "keywords": [],
+    "priority": 0,
+    "providers": [
+        "Modules\\CatalogManagement\\Providers\\CatalogManagementServiceProvider"
+    ],
+    "aliases": {},
+    "files": [],
+    "requires": []
+}

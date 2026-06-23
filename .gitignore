@@ -1,0 +1,32 @@
+/node_modules
+/public/hot
+/public/storage
+/public/cgi-bin
+/storage/*.key
+/vendor
+.env
+.env.*
+!.env.example
+.phpunit.result.cache
+docker-compose.override.yml
+Homestead.json
+Homestead.yaml
+npm-debug.log
+yarn-error.log
+/.idea
+/.vscode
+
+# OS/editor noise
+.DS_Store
+Thumbs.db
+
+# Local backups and hosting exports
+*.bak
+*.old
+*.orig
+*.save
+*.sql
+*.zip
+*.tar
+*.tar.gz
+*.tgz

@@ -1,0 +1,13 @@
+{
+    "name": "MediaManagement",
+    "alias": "mediamanagement",
+    "description": "",
+    "keywords": [],
+    "priority": 0,
+    "providers": [
+        "Modules\\MediaManagement\\Providers\\MediaManagementServiceProvider"
+    ],
+    "aliases": {},
+    "files": [],
+    "requires": []
+}

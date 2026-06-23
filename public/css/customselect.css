@@ -1,0 +1,79 @@
+
+.four { width: 45%; max-width: 45%;}
+
+ 
+/* COLUMNS */
+
+.col {
+  display: block;
+  float:left;
+  margin: 1% 0 1% 1.6%;
+}
+
+.col:first-of-type { margin-left: 0; }
+
+/* CLEARFIX */
+
+.cf:before,
+.cf:after {
+    content: " ";
+    display: table;
+}
+
+.cf:after {
+    clear: both;
+}
+
+.cf {
+    *zoom: 1;
+}
+
+/* FORM */
+.form .plan input, .form .payment-plan input, .form .payment-type input{
+	display: none;
+}
+
+
+.cf label{
+	/* position: relative; */
+	color: #fff;
+	background-color: #aaa;
+	font-size: 12px;
+	text-align: center;
+	height: 50px; 
+	width: 100%;
+	line-height: 50px;
+	  display: block; 
+	cursor: pointer;
+	border: 3px solid transparent;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+.form .plan input:checked + label, .form .payment-plan input:checked + label, .form .payment-type input:checked + label{
+	/* border: 1px solid #333; */
+	height: 50px;
+	background-color: #003399;
+	-webkit-box-shadow: 0 0 0 0.2rem rgba(247, 253, 249, 0.712);
+    box-shadow: 0 0 0 0.2rem rgba(247, 253, 249, 0.712)
+}
+
+.submit{
+	padding: 15px 60px;
+	display: inline-block;
+	border: none;
+	margin: 20px 0;
+	background-color: #2fcc71;
+	color: #fff;
+	border: 2px solid #333;
+	font-size: 18px;
+	-webkit-transition: transform 0.3s ease-in-out;
+	-o-transition: transform 0.3s ease-in-out;
+	transition: transform 0.3s ease-in-out;
+}
+
+.submit:hover{
+	cursor: pointer;
+	transform: rotateX(360deg);
+}

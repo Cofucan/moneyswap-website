@@ -1,0 +1,13 @@
+{
+    "name": "OrganizationManagement",
+    "alias": "organizationmanagement",
+    "description": "",
+    "keywords": [],
+    "priority": 0,
+    "providers": [
+        "Modules\\OrganizationManagement\\Providers\\OrganizationManagementServiceProvider"
+    ],
+    "aliases": {},
+    "files": [],
+    "requires": []
+}

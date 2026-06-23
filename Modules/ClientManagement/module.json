@@ -1,0 +1,13 @@
+{
+    "name": "ClientManagement",
+    "alias": "clientmanagement",
+    "description": "",
+    "keywords": [],
+    "priority": 0,
+    "providers": [
+        "Modules\\ClientManagement\\Providers\\ClientManagementServiceProvider"
+    ],
+    "aliases": {},
+    "files": [],
+    "requires": []
+}

@@ -1,0 +1,13 @@
+{
+    "name": "Applicationmanagement",
+    "alias": "applicationmanagement",
+    "description": "",
+    "keywords": [],
+    "priority": 0,
+    "providers": [
+        "Modules\\Applicationmanagement\\Providers\\ApplicationmanagementServiceProvider"
+    ],
+    "aliases": {},
+    "files": [],
+    "requires": []
+}
