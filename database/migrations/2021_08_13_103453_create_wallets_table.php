@@ -13,7 +13,7 @@ class CreateWalletsTable extends Migration
      */
     public function up()
     {
-        Schema::create('causes', function (Blueprint $table) {
+        Schema::create('wallets', function (Blueprint $table) {
             $table->id();
             $table->foreignId('profile_id')->constrained();
             $table->foreignId('bank_id')->constrained();
@@ -41,6 +41,6 @@ class CreateWalletsTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('causes');
+        Schema::dropIfExists('wallets');
     }
 }

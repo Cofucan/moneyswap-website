@@ -19,7 +19,7 @@ class CreatePagesTable extends Migration
             $table->string('headline');
             $table->text('body');
             $table->string('display_image')->nullable();
-            $table->booolean('published');
+            $table->boolean('published');
             $table->timestamps();
         });
     }
