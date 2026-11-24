@@ -48,6 +48,9 @@ class PageController extends Controller
 
     public function page($slug)
     {
+        if ($slug === 'privacy-policy') {
+            return redirect()->route('privacy', [], 301);
+        }
         $page = Page::where('page_tag', !empty($slug) ? $slug : 'home')->firstOrFail();
         if($page->page_tag =='about')
         {
@@ -59,9 +62,9 @@ class PageController extends Controller
 
     public function privacy()
     {
-        $page_tag = 'privacy-policy';
-        $page = Page::where('page_tag', $page_tag)->first();
-        return view('contentmanagement::pages.page', compact('page'));
+        // The privacy policy lives in the repo, not the CMS: the CMS row
+        // tagged 'privacy-policy' held the Terms of Service text.
+        return view('contentmanagement::pages.privacy');
     }
 
     public function pricing()

@@ -50,7 +50,7 @@
         <div class="services-list">
             <a href="#" class="active">Legal</a>
             <a href="{{ url('page/terms') }}">Terms of Service</a>
-            <a href="{{ url('page/privacy-policy') }}">Privacy Policy</a>
+            <a href="{{ url('privacy-policy') }}">Privacy Policy</a>
             <a href="{{ url('page/complaint') }}">AML compliant</a>
         </div>
         </div>
